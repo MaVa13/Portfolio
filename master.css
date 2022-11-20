@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.section {
+  height: 580px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section a {
+  color: #10A5F5;
+  margin-top: 15px;
+  font-size: 20px;
+  z-index: 9999;
+}
+
+h1 {
+  font-size: 90px;
+  z-index: 10;
+  position: relative;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: lighter;
+  z-index: 9999;
+  position: relative;
+}
+
+.left,
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  position: relative;
+}
+
+/*
+header
+*/
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+header ul {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 24%;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.header-logo {
+  height: 20px;
+  width: auto;
+}
+
+header a {
+  transition: 500ms;
+  color: white;
+}
+
+header a:hover {
+  color: white;
+}
+
+
+/*
+footer
+*/
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #D9D9D6;
+  color: black;
+  padding: 20px 0 10px 0;
+}
+
+.footer-wrapper {
+  width: 55%;
+}
+
+.links {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-top: 1px solid #141414;
+  border-bottom: 1px solid #141414;
+}
+
+.links-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.links a {
+  color: #141414;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.links span {
+  font-weight: bold;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: #141414;
+  line-height: 20px;
+}
+
+footer .links .najbliza-trgovina {
+  margin-top: 300px;
+  color: #10A5F5;
+}
+
+footer .links .najbliza-trgovina a:hover {
+  text-decoration: underline;
+  color: #10A5F5;
+}
+
+.footer-croatia {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.flag {
+  height: 16px;
+  width: auto;
+  border-radius: 100%;
+}
+
+.croatia {
+  margin: 0;
+  font-size: 11px;
+  margin-left: 5px;
+}
+
+.rights {
+  font-size: 11px;
+  width: 50%;
+  position: absolute;
+}
+
+.footer-text a {
+  color: black;
+  font-weight: bold;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+
+/*
+portfolio
+*/
+
+/*
+hello
+*/
+
+.hello {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.hello-img {
+  width: 50%;
+}
+.text-outline {
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.check {
+  background-color: black;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 20px 0;
+  font-size: 32px;
+}
+
+/*
+Skills
+*/
+
+.skills {
+  display: flex;
+  align-items: center;
+  height: 450px;
+  width: 90%;
+  line-height: 35px;
+}
+
+.skills-img, .skills-txt {
+  width: 50%;
+  height: auto;
+}
+
+.button {
+  padding: 10px 15px;
+  border: 1px black solid;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 50px;
+}
