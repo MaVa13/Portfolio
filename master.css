@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Imprima';
   color: black;
 }
 
@@ -37,14 +37,11 @@ a {
 h1 {
   font-size: 90px;
   z-index: 10;
-  position: relative;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: lighter;
-  z-index: 9999;
-  position: relative;
 }
 
 .left,
@@ -57,7 +54,8 @@ h2 {
 }
 
 p {
-  position: relative;
+  font-size: 24px;
+  font-weight: lighter;
 }
 
 /*
@@ -68,6 +66,8 @@ header {
   display: flex;
   justify-content: center;
   background-color: black;
+  position: fixed;
+  width: 100%;
 }
 
 header ul {
@@ -75,7 +75,7 @@ header ul {
   align-items: center;
   justify-content: space-between;
   width: 24%;
-  font-size: 13px;
+  font-size: 14px;
   padding: 10px;
 }
 
@@ -100,16 +100,19 @@ footer
 
 footer {
   width: 100%;
-  display: flex;
+  /*display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #D9D9D6;
-  color: black;
-  padding: 20px 0 10px 0;
+  align-items: center;*/
+  background-color: black;
+  font-size: 14px;
+  padding: 10px;
+  color: white;
 }
 
 .footer-wrapper {
-  width: 55%;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .links {
@@ -158,39 +161,11 @@ footer .links .najbliza-trgovina a:hover {
   color: #10A5F5;
 }
 
-.footer-croatia {
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-}
-
-.flag {
-  height: 16px;
-  width: auto;
-  border-radius: 100%;
-}
-
-.croatia {
+.footer-txt {
   margin: 0;
-  font-size: 11px;
-  margin-left: 5px;
+  font-size: 14px;
 }
 
-.rights {
-  font-size: 11px;
-  width: 50%;
-  position: absolute;
-}
-
-.footer-text a {
-  color: black;
-  font-weight: bold;
-}
-
-.footer-text a:hover {
-  text-decoration: underline;
-}
 
 
 /*
@@ -202,7 +177,7 @@ hello
 */
 
 .hello {
-  height: 85vh;
+  height: 90vh;
   display: flex;
   align-items: center;
 }
@@ -217,30 +192,44 @@ hello
   -webkit-text-stroke-color: black;
 }
 
-.check {
+.check {/*
   background-color: black;
   text-align: center;
   text-transform: uppercase;
-  color: white;
   padding: 20px 0;
-  font-size: 32px;
+  font-size: 32px;*/
+  text-align: center;
+  text-transform: uppercase;
+  background-color: black;
+  padding: 22px 0;
+  font-size: 24px;
+  color: white;
 }
 
 /*
 Skills
 */
 
-.skills {
+main {
   display: flex;
   align-items: center;
-  height: 450px;
-  width: 90%;
+  flex-direction: column;
+}
+
+.skill-1,
+.skill-2,
+.skill-3,
+.skill-4 {
+  display: flex;
+  align-items: center;
+  height: 500px;
+  width: 60%;
   line-height: 35px;
 }
 
 .skills-img, .skills-txt {
-  width: 50%;
-  height: auto;
+  width: 100%;
+  height: 500px;
 }
 
 .button {
@@ -248,5 +237,25 @@ Skills
   border: 1px black solid;
   border-radius: 4px;
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: 20px;
+}
+
+.skills-img {
+  background-image: url(img/color.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.skills-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5px;
+}
+
+.blank {
+  height: 500px;
+  width: 33%;
+  background-color: #CCCCCC;
 }
